@@ -22,11 +22,20 @@ export default function Navbar() {
         </div>
         
         <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-          <a href="/cardapio" className="hover:text-brand-pink-dark transition-colors">Categorias</a>
-          <a href="#sobre" className="hover:text-brand-pink-dark transition-colors">Diferenciais</a>
-          <a href="#galeria" className="hover:text-brand-pink-dark transition-colors">Galeria</a>
-          <a href="#depoimentos" className="hover:text-brand-pink-dark transition-colors">Clientes</a>
-        </div>
+         <a href="/cardapio" className="hover:text-brand-pink-dark transition-colors">
+    Cardápio
+  </a>
+
+           <a href="#sobre" className="hover:text-brand-pink-dark transition-colors">
+    Diferenciais
+  </a>
+           <a href="#galeria" className="hover:text-brand-pink-dark transition-colors">
+    Galeria
+  </a>
+            <a href="#depoimentos" className="hover:text-brand-pink-dark transition-colors">
+    Clientes
+  </a>
+</div>
 
         <div className="flex items-center gap-4">
           <a 
