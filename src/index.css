@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  --color-brand-pink: #FCE4EC;
+  --color-brand-pink-dark: #F8BBD0;
+  --color-brand-blue: #E0F7FA;
+  --color-brand-blue-dark: #B2EBF2;
+  --color-brand-beige: #FFF9F0;
+  --color-brand-gold: #D4AF37;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-beige text-gray-800 font-sans;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight text-gray-900;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-sm border border-white shadow-soft rounded-3xl;
+}
+
+@utility shadow-soft {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+}
+
+.category-card {
+  @apply relative overflow-hidden transition-all duration-300 hover:-translate-y-2;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}

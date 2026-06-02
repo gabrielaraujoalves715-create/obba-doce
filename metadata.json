@@ -1,0 +1,6 @@
+{
+  "name": "Obba Doces",
+  "description": "Doceria artesanal moderna e elegante com bolos, doces e churros feitos com amor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
