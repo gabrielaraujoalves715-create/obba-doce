@@ -35,7 +35,7 @@ export default function Footer() {
         <div>
           <h4 className="font-bold text-lg mb-6">Links Rápidos</h4>
           <ul className="space-y-4 text-gray-600">
-            <li><a href="#categorias" className="hover:text-brand-pink-dark transition-colors">Categorias</a></li>
+            <li><a href="cardapio" className="hover:text-brand-pink-dark transition-colors">Cardapio</a></li>
             <li><a href="#sobre" className="hover:text-brand-pink-dark transition-colors">Por que escolher</a></li>
             <li><a href="#Instagram" className="hover:text-brand-pink-dark transition-colors">Instagram</a></li>
             <li><a href="#depoimentos" className="hover:text-brand-pink-dark transition-colors">Depoimentos</a></li>
@@ -75,7 +75,7 @@ export default function Footer() {
       
       <div className="max-w-7xl mx-auto pt-8 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
         <p>© {new Date().getFullYear()} Obba Doces. Todos os direitos reservados.</p>
-        <p>Desenvolvido com ❤️ para os melhores momentos.</p>
+        <p>Desenvolvido por GHZ Studio</p>
       </div>
     </footer>
   );
