@@ -384,7 +384,7 @@ export default function CardapioObbaDoces() {
         {/* CTA */}
         <footer className="mt-14 text-center max-w-2xl mx-auto px-2">
           <h3 className="text-xl font-bold text-gray-900 font-display mb-2">
-            Encomende o seu e adoce seu dia!
+            Encomende o seu doce e a doce seu dia!
           </h3>
           <p className="text-gray-600 text-sm mb-6">
             Fale conosco e monte seu pedido personalizado.
