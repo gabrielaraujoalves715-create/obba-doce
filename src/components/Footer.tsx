@@ -37,7 +37,7 @@ export default function Footer() {
           <ul className="space-y-4 text-gray-600">
             <li><a href="#categorias" className="hover:text-brand-pink-dark transition-colors">Categorias</a></li>
             <li><a href="#sobre" className="hover:text-brand-pink-dark transition-colors">Por que escolher</a></li>
-            <li><a href="#galeria" className="hover:text-brand-pink-dark transition-colors">Galeria</a></li>
+            <li><a href="#Instagram" className="hover:text-brand-pink-dark transition-colors">Instagram</a></li>
             <li><a href="#depoimentos" className="hover:text-brand-pink-dark transition-colors">Depoimentos</a></li>
           </ul>
         </div>

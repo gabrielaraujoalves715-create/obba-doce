@@ -31,7 +31,7 @@ export default function Navbar() {
   </a>
 
   <a href="#galeria" className="hover:text-brand-pink-dark transition-colors">
-    Galeria
+    Instagram
   </a>
 
   <a href="#depoimentos" className="hover:text-brand-pink-dark transition-colors">

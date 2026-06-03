@@ -12,11 +12,33 @@ import obbaDocesLogo from "../assets/images/obba_doces_logo_1779586898937.png";
 export default function Hero() {
   return (
     <section className="relative pt-24 pb-12 overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-20 -left-20 w-64 h-64 bg-brand-pink/30 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 -right-20 w-96 h-96 bg-brand-blue/30 rounded-full blur-3xl" />
+       {/* Animação do fundo */}
+    <motion.div
+  className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_15%_20%,rgba(252,78,195,0.10),transparent_28%),radial-gradient(circle_at_85%_70%,rgba(248,187,208,0.12),transparent_30%)]"
+  animate={{
+    opacity: [0.65, 0.9, 0.65],
+  }}
+  transition={{
+    duration: 6,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+/>
 
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+<motion.div
+  className="absolute inset-0 z-0 bg-[linear-gradient(120deg,transparent_0%,rgba(255,255,255,0.35)_45%,transparent_70%)]"
+  animate={{
+    x: ["-20%", "20%", "-20%"],
+  }}
+  transition={{
+    duration: 12,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+/>
+      
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -33,7 +55,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-xl text-gray-600 mb-10 max-w-lg leading-relaxed">
-            Bolos, doces e churros artesanais feitos sob encomenda com ingredientes selecionados e muito carinho.
+            Bolos e doces artesanais feitos sob encomenda com ingredientes selecionados e muito carinho.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
