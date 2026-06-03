@@ -402,16 +402,7 @@ export default function CardapioObbaDoces() {
                   d="M12.004 2c-5.51 0-9.996 4.486-9.996 9.998 0 1.763.461 3.42 1.267 4.873l-1.274 4.656 4.773-1.253c1.412.766 3.012 1.201 4.717 1.201 5.51 0 9.996-4.486 9.996-9.998C22 6.486 17.514 2 12.004 2zm3.763 13.7c-.24.68-.1.94-.39 1.22-.3.29-.69.43-1.14.45-.46.02-.92-.08-2.12-.57-2.61-1.07-4.31-3.73-4.44-3.91-.13-.18-1.03-1.37-1.01-2.62.02-1.25.66-1.86.9-2.11.24-.25.53-.31.68-.31h.43c.13 0 .3.01.46.38.17.39.58 1.42.63 1.53.05.11.08.24.01.38-.07.14-.15.24-.25.36-.11.12-.22.24-.31.35-.11.12-.12.25-.01.44.47.81 1.05 1.48 1.81 2.02.77.53 1.51.81 1.73.92.22.11.35.09.48-.06.13-.15.55-.64.7-.86.15-.22.3-.18.5-.11.2.07 1.27.6 1.49.71.22.11.37.17.42.26.06.09.06.52-.18 1.2z"
                 />
               </svg>
-              WhatsApp (11) 94640-8023
-            </a>
-            <a
-              href="https://instagram.com/obba_docess"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCB045] text-white font-bold px-8 py-3.5 rounded-full shadow-md hover:opacity-95 transition-all hover:-translate-y-0.5"
-            >
-              <Instagram size={20} />
-              @obba_docess
+              Encomendar
             </a>
           </div>
         </footer>
