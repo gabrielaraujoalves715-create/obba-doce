@@ -1,81 +1,110 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
-import { Instagram, Clock, MapPin } from "lucide-react";
-import WhatsAppIcon from "./WhatsAppIcon";
+import { Instagram } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-white pt-20 pb-10 px-6 border-t border-gray-100">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
-        <div className="col-span-1 md:col-span-2">
-          <span className="font-display font-bold text-3xl tracking-tight text-gray-900 mb-6 block">
-            Obba <span className="text-brand-pink-dark">Doces</span>
-          </span>
-          <p className="text-gray-600 max-w-sm leading-relaxed mb-8">
-            Doceria artesanal focada em levar doçura e amor para os seus momentos mais importantes. Visual clean, sabor premium e muito carinho em cada detalhe.
+    <footer className="bg-[#1F2635] px-5 py-12 text-white sm:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 md:grid-cols-3">
+        {/* Marca */}
+        <div>
+          <a
+            href="/"
+            className="inline-flex items-center text-2xl font-extrabold tracking-[-0.04em]"
+          >
+            <span className="text-white">Obba</span>
+            <span className="ml-1 text-[#E06D8A]">Doces</span>
+          </a>
+
+          <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/70">
+            Bolos, doces e encomendas artesanais preparados para aniversários,
+            presentes e momentos especiais.
           </p>
-          <div className="flex gap-4">
-            <a href="https://instagram.com/obba_docess" className="w-12 h-12 bg-brand-pink/30 rounded-2xl flex items-center justify-center text-brand-pink-dark hover:bg-brand-pink transition-colors">
-              <Instagram size={24} />
+        </div>
+
+        {/* Navegação */}
+        <div>
+          <h3 className="text-sm font-bold uppercase tracking-[0.14em] text-white/90">
+            Navegação
+          </h3>
+
+          <nav className="mt-4 flex flex-col gap-3 text-sm text-white/70">
+            <a href="/cardapio" className="transition hover:text-[#E06D8A]">
+              Cardápio
             </a>
-            <a 
-              href="https://api.whatsapp.com/send?phone=5511946408023&text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20encomenda." 
+
+            <a href="#sobre" className="transition hover:text-[#E06D8A]">
+              Diferenciais
+            </a>
+
+            <a href="#galeria" className="transition hover:text-[#E06D8A]">
+              Galeria
+            </a>
+
+            <a
+              href="#como-encomendar"
+              className="transition hover:text-[#E06D8A]"
+            >
+              Como encomendar
+            </a>
+
+            <a
+              href="#depoimentos"
+              className="transition hover:text-[#E06D8A]"
+            >
+              Depoimentos
+            </a>
+          </nav>
+        </div>
+
+        {/* Contato */}
+        <div>
+          <h3 className="text-sm font-bold uppercase tracking-[0.14em] text-white/90">
+            Contato
+          </h3>
+
+          <div className="mt-4 space-y-3 text-sm text-white/70">
+            <p>Seg a Sex: 08:30 às 20:00</p>
+            <p>Sáb e Dom: 09:00 às 18:00</p>
+          </div>
+
+          <div className="mt-6 flex items-center gap-3">
+            <a
+              href="https://instagram.com/obba_docess"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 hover:bg-green-200 transition-colors"
+              aria-label="Instagram da Obba Doces"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#E06D8A]"
             >
-              <WhatsAppIcon size={24} />
+              <Instagram size={21} />
+            </a>
+
+            <a
+              href="https://api.whatsapp.com/send?phone=5511946408023&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Obba%20Doces%20e%20gostaria%20de%20fazer%20uma%20encomenda."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp da Obba Doces"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-[#25D366] transition hover:bg-[#20BA5A]"
+            >
+              <FaWhatsapp size={22} />
             </a>
           </div>
         </div>
-
-        <div>
-          <h4 className="font-bold text-lg mb-6">Links Rápidos</h4>
-          <ul className="space-y-4 text-gray-600">
-            <li><a href="cardapio" className="hover:text-brand-pink-dark transition-colors">Cardapio</a></li>
-            <li><a href="#sobre" className="hover:text-brand-pink-dark transition-colors">Por que escolher</a></li>
-            <li><a href="#Instagram" className="hover:text-brand-pink-dark transition-colors">Instagram</a></li>
-            <li><a href="#depoimentos" className="hover:text-brand-pink-dark transition-colors">Depoimentos</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-bold text-lg mb-6">Informações</h4>
-          <ul className="space-y-4 text-gray-600">
-            <li className="flex items-start gap-3">
-              <Clock size={18} className="text-brand-pink-dark mt-1 flex-shrink-0" />
-              <div className="flex flex-col text-sm">
-                <span>Seg a Sex: 08:30 às 20:00</span>
-                <span>Sáb e Dom: 09:00 às 18:00</span>
-              </div>
-            </li>
-            <li className="flex items-start gap-3 text-sm">
-              <MapPin size={18} className="text-brand-pink-dark mt-1 flex-shrink-0" />
-              <div className="flex flex-col">
-                <span>Rua Bernardo Correia Leitão, 651</span>
-                <span>Parque Regina, São Paulo - SP</span>
-              </div>
-            </li>
-            <li className="flex items-center gap-3 text-green-600 hover:text-green-700 font-bold underline">
-              <WhatsAppIcon size={18} />
-              <a 
-                href="https://api.whatsapp.com/send?phone=5511946408023&text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20encomenda." 
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Fale Conosco no WhatsApp
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
-      
-      <div className="max-w-7xl mx-auto pt-8 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-        <p>© {new Date().getFullYear()} Obba Doces. Todos os direitos reservados.</p>
-        <p>Desenvolvido por GHZ Studio</p>
+
+      <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t border-white/10 pt-6 text-center text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between sm:text-left">
+        <p>© 2026 Obba Doces. Todos os direitos reservados.</p>
+
+        <p>
+          Site desenvolvido por{" "}
+          <a
+            href="https://ghzstudiooficial.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-white/80 transition hover:text-[#E06D8A]"
+          >
+            GHZ Studio
+          </a>
+        </p>
       </div>
     </footer>
   );

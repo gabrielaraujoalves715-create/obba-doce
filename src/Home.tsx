@@ -9,20 +9,21 @@ import Benefits from "./components/Benefits";
 import Gallery from "./components/Gallery";
 import Testimonials from "./components/Testimonials";
 import CTA from "./components/CTA";
-import MapSection from "./components/MapSection";
 import Footer from "./components/Footer";
-
+import CategoriesPreview from "./components/CategoriesPreview";
+import HowToOrder from "./components/HowToOrder";
 export default function Home() {
   return (
     <div className="min-h-screen selection:bg-brand-pink selection:text-brand-pink-dark">
       <Navbar />
       <main>
         <Hero />
+         <CategoriesPreview />
         <Benefits />
         <Gallery />
+        <HowToOrder />
         <Testimonials />
         <CTA />
-        <MapSection />
       </main>
       <Footer />
     </div>

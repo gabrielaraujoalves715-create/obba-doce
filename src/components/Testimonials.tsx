@@ -10,21 +10,21 @@ import { Testimonial } from "../types";
 const TESTIMONIALS = [
   { 
     id: '1', 
-    name: 'Juliana Silva', 
+    name: 'Amanda Silva', 
     text: 'Os doces chegaram perfeitos e deliciosos! O capricho na embalagem é incrível.', 
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=120&h=120'
   },
   { 
     id: '2', 
-    name: 'Mariana Costa', 
+    name: 'Carla Souza', 
     text: 'Todo mundo elogiou o bolo da festa. Além de lindo, estava super fofinho!', 
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=120&h=120'
   },
   { 
     id: '3', 
-    name: 'Ana Beatriz', 
+    name: 'Coceição Oliveira', 
     text: 'bolo maravilhoso super recomendo !', 
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=120&h=120'
