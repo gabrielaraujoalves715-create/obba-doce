@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-
-const categorias = [
+import { Link } from "react-router-dom";const categorias = [
   {
     titulo: "Bolos artesanais",
     descricao:
@@ -8,16 +6,16 @@ const categorias = [
     imagem: "/bolos-artesanais.jpg",
   },
   {
-    titulo: "Doces para festas",
-    descricao:
-      "Brigadeiros, beijinhos, doces elaborados e opções para diferentes comemorações.",
-    imagem: "/doces-para-festas.jpeg",
-  },
-  {
     titulo: "Doces finos",
     descricao:
       "Camafeus, trufas, bombons e doces especiais para eventos e celebrações.",
-    imagem: "/doces-finos.jpg",
+    imagem: "/doces-para-festas.jpeg",
+  },
+  {
+    titulo: "Doces para festas",
+    descricao:
+      "Brigadeiros, beijinhos, doces elaborados e opções para diferentes comemorações.",
+     imagem: "/doces-finos.jpg",
   },
 ];
 

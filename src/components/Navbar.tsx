@@ -3,140 +3,167 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { motion } from "motion/react";
-import { Instagram } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
-
+import { useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import { Menu, Search, X } from "lucide-react";
+import logoObba from "../assets/images/logo-obba.png";
 export default function Navbar() {
+  const [menuAberto, setMenuAberto] = useState(false);
+
+  const fecharMenu = () => setMenuAberto(false);
+
   return (
-   <motion.nav
-  initial={{ y: -100, opacity: 0 }}
-  animate={{ y: 0, opacity: 1 }}
-  transition={{ duration: 0.6, ease: "easeOut" }}
-  className="fixed left-0 right-0 top-0 z-50"
->
-  <div
-    className="
-      flex
-      w-full
-      items-center
-      justify-between
-      border-b
-      border-black/5
-      bg-white
-      px-5
-      py-4
-      shadow-sm
-      sm:px-8
-      lg:px-12
-    "
-  >
-        {/* Nome da marca */}
-        <a
-          href="/"
-          aria-label="Página inicial da Obba Doces"
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="fixed left-0 right-0 top-0 z-50"
+    >
+      <div
+        className="
+          relative
+          flex
+          min-h-20
+          w-full
+          items-center
+          justify-between
+          border-b
+          border-black/5
+          bg-white
+          px-5
+          shadow-sm
+          sm:px-8
+          lg:px-12
+        "
+      >
+        {/* Menu à esquerda */}
+        <button
+          type="button"
+          onClick={() => setMenuAberto((estadoAtual) => !estadoAtual)}
+          aria-label={menuAberto ? "Fechar menu" : "Abrir menu"}
+          aria-expanded={menuAberto}
           className="
             flex
-            shrink-0
+            min-h-11
             items-center
-            text-xl
-            font-extrabold
-            tracking-[-0.04em]
-            sm:text-2xl
+            gap-2
+            text-sm
+            font-medium
+            text-[#1F2635]
+            transition-colors
+            hover:text-[#E06D8A]
           "
         >
-          <span className="text-[#1F2635]">Obba</span>
-          <span className="ml-1 text-[#E06D8A]">Doces</span>
-        </a>
+          {menuAberto ? <X size={21} /> : <Menu size={21} />}
 
-        {/* Links do menu — desktop */}
-        <div className="hidden items-center gap-8 text-sm font-medium text-[#1F2635] lg:flex">
-          <a
-            href="/cardapio"
-            className="transition-colors hover:text-[#E06D8A]"
-          >
-            Cardápio
-          </a>
+        </button>
 
-          <a
-            href="#sobre"
-            className="transition-colors hover:text-[#E06D8A]"
-          >
-            Diferenciais
-          </a>
+        {/* Logo centralizada */}
+        <a
+         href="/"
+         aria-label="Página inicial da Obba Doces"
+         className="
+         absolute
+         left-1/2
+         -translate-x-1/2
+         "
+         >
+         <img
+         src={logoObba}
+         alt="Obba Doces"
+         className="h-16 w-auto object-contain sm:h-20"
+         />
+         </a>
 
-          <a
-            href="#galeria"
-            className="transition-colors hover:text-[#E06D8A]"
-          >
-            Instagram
-          </a>
-
-          <a
-            href="#depoimentos"
-            className="transition-colors hover:text-[#E06D8A]"
-          >
-            Clientes
-          </a>
+        {/* Link à direita */}
+        <a
+       href="/cardapio"
+        aria-label="Pesquisar no cardápio"
+       className="
+       flex
+       h-11
+       w-11
+       items-center
+       justify-center
+       text-[#1F2635]
+       transition-colors
+       hover:text-[#E06D8A]
+       "
+       >
+       <Search size={21} />
+       </a>
         </div>
 
-        {/* Redes sociais e WhatsApp */}
-        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
-          <a
-            href="https://instagram.com/obba_docess"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram da Obba Doces"
+      {/* Menu suspenso */}
+      <AnimatePresence>
+        {menuAberto && (
+          <motion.div
+            initial={{ opacity: 0, y: -12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            transition={{ duration: 0.22 }}
             className="
-              hidden
-              h-10
-              w-10
-              items-center
-              justify-center
-              rounded-full
-              text-[#1F2635]
-              transition
-              hover:bg-[#E06D8A]/10
-              hover:text-[#E06D8A]
-              sm:flex
-            "
-          >
-            <Instagram size={21} />
-          </a>
-
-          <a
-            href="https://api.whatsapp.com/send?phone=5511946408023&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Obba%20Doces%20e%20gostaria%20de%20fazer%20uma%20encomenda."
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Fazer encomenda pelo WhatsApp"
-            className="
-              inline-flex
-              min-h-11
-              items-center
-              justify-center
-              gap-2
-              rounded-full
-              bg-[#25D366]
-              px-4
-              py-2.5
-              text-sm
-              font-semibold
-              text-white
+              border-b
+              border-black/5
+              bg-white
+              px-5
+              py-5
               shadow-md
-              transition
-              duration-300
-              hover:-translate-y-0.5
-              hover:bg-[#20BA5A]
-              hover:shadow-lg
-              active:translate-y-0
-              sm:px-5
+              sm:px-8
+              lg:px-12
             "
           >
-            <FaWhatsapp size={20} />
-            <span className="hidden sm:inline">WhatsApp</span>
-          </a>
-        </div>
-      </div>
+            <div
+              className="
+                mx-auto
+                flex
+                max-w-7xl
+                flex-col
+                gap-4
+                text-sm
+                font-medium
+                text-[#1F2635]
+                sm:flex-row
+                sm:items-center
+                sm:justify-center
+                sm:gap-8
+              "
+            >
+              <a
+                href="/cardapio"
+                onClick={fecharMenu}
+                className="transition-colors hover:text-[#E06D8A]"
+              >
+                Cardápio
+              </a>
+
+              <a
+                href="#sobre"
+                onClick={fecharMenu}
+                className="transition-colors hover:text-[#E06D8A]"
+              >
+                Diferenciais
+              </a>
+
+              <a
+                href="#galeria"
+                onClick={fecharMenu}
+                className="transition-colors hover:text-[#E06D8A]"
+              >
+                Instagram
+              </a>
+
+              <a
+                href="#depoimentos"
+                onClick={fecharMenu}
+                className="transition-colors hover:text-[#E06D8A]"
+              >
+                Clientes
+              </a>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 }
