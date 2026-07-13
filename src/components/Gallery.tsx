@@ -5,10 +5,10 @@
 
 import { motion } from "motion/react";
 import { Instagram } from "lucide-react";
-import chocolateStrawberryCake from "../assets/images/chocolate_strawberry_cake_1779651046602.png";
-import eggFilled from "../assets/images/egg_filled_1779649001334.png";
-import eggCollection from "../assets/images/egg_collection_1779649017247.png";
-import chocolateCake from "../assets/images/chocolate_cake_1779649032721.png";
+import chocolateStrawberryCake from "../assets/images/chocolate_strawberry_cake_1779651046602.webp";
+import eggFilled from "../assets/images/egg_filled_1779649001334.webp";
+import eggCollection from "../assets/images/egg_collection_1779649017247.webp";
+import chocolateCake from "../assets/images/chocolate_cake_1779649032721.webp";
 
 const IMAGES = [
   {

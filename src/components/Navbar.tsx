@@ -6,8 +6,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, Search, X } from "lucide-react";
-import logoObba from "../assets/images/logo-obba.png";
-export default function Navbar() {
+import logoObba from "../assets/images/logo-obba.webp";export default function Navbar() {
   const [menuAberto, setMenuAberto] = useState(false);
 
   const fecharMenu = () => setMenuAberto(false);

@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";const categorias = [
     titulo: "Bolos artesanais",
     descricao:
       "Sabores clássicos, especiais, recheados e opções preparadas sob encomenda.",
-    imagem: "/bolos-artesanais.jpg",
+    image: "/bolos-artesanais.webp",
   },
   {
     titulo: "Doces finos",
     descricao:
       "Camafeus, trufas, bombons e doces especiais para eventos e celebrações.",
-    imagem: "/doces-para-festas.jpeg",
+    image: "/doces-para-festas.webp",
   },
   {
     titulo: "Doces para festas",
     descricao:
       "Brigadeiros, beijinhos, doces elaborados e opções para diferentes comemorações.",
-     imagem: "/doces-finos.jpg",
+     image: "/doces-finos.webp",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function CategoriesPreview() {
             >
               <div className="aspect-[4/3] overflow-hidden bg-[#F7E9DE]">
                 <img
-                  src={categoria.imagem}
+                  src={categoria.image}
                   alt={categoria.titulo}
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
                 />

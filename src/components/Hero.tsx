@@ -194,7 +194,7 @@ export default function Hero() {
             "
           >
             <img
-           src="/hero-obba-doces.jpg"
+           src="/hero-obba-doces.webp"
            alt="Doces artesanais da Obba Doces"
            className="h-full w-full object-cover"
 />
