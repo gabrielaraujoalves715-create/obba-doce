@@ -1,0 +1,19 @@
+# Obba Doces
+
+> Doceria artesanal localizada na Vila das Belezas, Zona Sul de São Paulo, especializada em bolos, doces finos e doces para festas sob encomenda.
+
+A Obba Doces produz bolos e doces artesanais para aniversários, festas, comemorações e momentos especiais.
+
+## Páginas principais
+
+- [Página inicial](https:obba-doce.vercel.app/) - Conheça a Obba Doces, seus produtos e formas de encomendar.
+- [Cardápio](https://obba-doce.vercel.app/cardapio) - Veja as opções de bolos, doces finos e doces para festas.
+- [Instagram](https://www.instagram.com/obba_docess/) - Fotos de produtos, novidades e trabalhos realizados.
+- [WhatsApp](https://wa.me/5511946408023) - Entre em contato para consultar disponibilidade e fazer encomendas.
+
+## Informações do negócio
+
+- Localização: Vila das Belezas, Zona Sul de São Paulo.
+- Atendimento: Vila das Belezas, Campo Limpo e região.
+- Produtos: bolos artesanais, doces para festas e doces finos.
+- Pedidos: realizados antecipadamente pelo site ou WhatsApp.
