@@ -158,10 +158,10 @@ export default function Hero() {
             mx-auto
             flex
             w-full
-            max-w-[320px]
+            max-w-[285px]
             justify-center
             px-5
-            sm:max-w-[340px]
+            sm:max-w-[300px]
           "
         >
         <a
@@ -180,8 +180,8 @@ export default function Hero() {
     border
     border-[#E06D8A]
     bg-white
-    px-5
-    py-2.5
+    px-4
+    py-2
     text-sm
     font-bold
     text-[#1F2635]
@@ -201,7 +201,7 @@ export default function Hero() {
 >
   <FaWhatsapp
     size={19}
-    className="shrink-0 text-[#E06D8A]"
+    className="shrink-0 text-[#25D366]"
     aria-hidden="true"
   />
 
