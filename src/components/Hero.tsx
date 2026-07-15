@@ -153,15 +153,15 @@ export default function Hero() {
           className="
             absolute
             inset-x-0
-            bottom-[5%]
+            bottom-[4%]
             z-20
             mx-auto
             flex
             w-full
-            max-w-[285px]
+            max-w-[260px]
             justify-center
-            px-5
-            sm:max-w-[300px]
+            px-2
+            sm:max-w-[275px]
           "
         >
         <a
